@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
-      Codeurl: ./mypractice
+      Codeurl: .
       Description: 'Test Lamda Desc'
       MemorySize: 128
       Timeout: 30
