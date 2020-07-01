@@ -2,12 +2,22 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: Test lambda
 Resources:
-  TestLambda:
+  TestLambda1:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: Test.lambda_handler
       Runtime: python3.6
-      CodeUri: .
+      CodeUri: ./LamdaFunctions
+      Description: 'Test Lamda Desc'
+      MemorySize: 128
+      Timeout: 30
+      Role: 'arn:aws:iam::056256368509:role/LamdaRole'
+  TestLambda2:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: Test1.lambda_handler
+      Runtime: python3.6
+      CodeUri: ./LamdaFunctions
       Description: 'Test Lamda Desc'
       MemorySize: 128
       Timeout: 30
