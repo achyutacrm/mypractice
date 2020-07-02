@@ -8,7 +8,7 @@ Resources:
       FunctionName: FirstFunction
       Handler: Test.lambda_handler
       Runtime: python3.6
-      CodeUri: ./first-function/
+      CodeUri: ./first-function
       Description: 'Test Lamda Desc'
       MemorySize: 128
       Timeout: 30
