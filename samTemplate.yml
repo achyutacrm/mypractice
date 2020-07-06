@@ -20,7 +20,7 @@ Resources:
       Handler: Test1.lambda_handler
       Runtime: python3.6
       CodeUri: ./
-      Description: 'Test Lamda Desc'
+      Description: 'Test Lamda Desc Second' 
       MemorySize: 128
       Timeout: 30
       Role: 'arn:aws:iam::056256368509:role/LamdaRole'
