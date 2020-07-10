@@ -5,7 +5,7 @@ Resources:
   FirstFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: FirstFunction
+      FunctionName: FirstFunction1
       Handler: Test.lambda_handler
       Runtime: python3.6
       CodeUri: lambda/LamdaFunctions/
@@ -16,7 +16,7 @@ Resources:
   SecondFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: SecondFunction
+      FunctionName: SecondFunction2
       Handler: Test1.lambda_handler
       Runtime: python3.6
       CodeUri: lambda/second-function/ 
