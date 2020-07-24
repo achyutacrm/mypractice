@@ -7,3 +7,4 @@ def lambda_handler(event, context):
     response = ec2.describe.availability.zones()
     return{"statuscode":200, "body":json.dumps(response)}   
 
+#Tested
